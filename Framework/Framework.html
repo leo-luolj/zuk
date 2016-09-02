@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 论坛-ZUK社区 </title>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link href="Framework.css" type="text/css" rel="stylesheet">
+  <script src="jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="Framework.js" type="text/javascript"></script>
+  <script src="bootstrap.min.js"></script>  
+ </head>
+
+ <body onload="readyPage()">
+	  <div class="container_nav1">
+	      <div class="container1">
+		       <div class="navbar1">
+		       <div class="navbar_img">
+			       <img src="zuk.png">
+			   </div>
+			   <div class="descri">
+			        <div class="navbar_content title-2">
+			        <ul id="tabcontent">
+				       <li><a href="#" class="active first">社区首页</a></li>
+					   <li><a href="#">论坛</a></li>
+					   <li><a href="#">兑换中心</a></li>
+					   <li><a href="http://www.zuk.com">ZUK官网</a></li>
+				   </ul>
+			   </div>
+			   <div class="navbar_login">
+			         <p>登陆  &#125;  注册</p> 
+			   </div>
+			 </div>
+		  </div>
+
+		  <div id="content">
+		      <div id="realcontent"></div>	  
+		  </div>
+
+		  <div class="footer">
+		       <div class="footcontent">
+			        <a>ZUK官网    &#124;     手机版</a>
+			        <p>Copyright © 2015 ZUK.CN / 京ICP备15007699号-1</p>
+			   </div>
+		  </div>
+		  </div>
+	  </div>
+
+
+
+	    <script language="javascript">
+        function readyPage() {
+
+			 if (screen.width >= 1600){
+                $(".container_nav1").width(1600);
+			}
+
+			 else if ((screen.width >= 1366)&& (screen.width < 1600)){
+                $(".container_nav1").width(1366);    //此分辨率下你需要的操作
+
+            } 
+
+              else if ((screen.width >= 1024)&& (screen.width < 1366)){
+                $(".container_nav1").width(1024);    //此分辨率下你需要的操作
+
+            } 
+			
+			  else if ((screen.width >= 980)&& (screen.width < 1024)){
+                $(".container_nav1").width(980);    //此分辨率下你需要的操作
+            }
+
+			 else if ((screen.width >= 700)&& (screen.width < 980)){
+                $(".container_nav1").width(700);    //此分辨率下你需要的操作
+            }
+
+             			
+			  else {
+                $(".container_nav").width(540);     //这个分辨率下你的操作
+            }
+
+        }
+    </script>
+ </body>
+</html>
+ 
